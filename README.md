@@ -12,8 +12,6 @@ Configuration
 Usage
 =====
 
-Examples are in Controllers because it's easier to show services injection.
-
 To export data to a Google Spreadsheet:
 
 ```php
@@ -21,9 +19,9 @@ To export data to a Google Spreadsheet:
 
 use MercesLab\Component\GoogleFixtures\ExportClient;
 
-class SomeController
+class SomeService
 {
-    public function exportAction(ExportClient $exportClient)
+    public function export(ExportClient $exportClient)
     {
         $exportClient->exportLine(['foo' => 'bar',], ['fileId' => 'myFile']);
     }
@@ -37,9 +35,9 @@ To import data from a Google Spreadsheet:
 
 use MercesLab\Component\GoogleFixtures\ImportClient;
 
-class SomeController
+class SomeService
 {
-    public function importAction(ImportClient $exportClient)
+    public function import(ImportClient $exportClient)
     {
         $data = $exportClient->importValues(['fileId' => 'myFile', 'range' => '\'Sheet1\'!A2:E9999']);
     }

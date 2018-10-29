@@ -7,7 +7,7 @@
     "php": "^7.1.3",
     "symfony/dependency-injection": "^4.1",
     "symfony/config": "^4.1",
-    "merceslab/google-fixtures": "dev-master"
+    "merceslab/google-fixtures": "^1.0"
   },
   "authors": [
     {

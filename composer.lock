@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cebfa51940f221f238d9f0afb50a9579",
+    "content-hash": "9095e0e139e79bf4e5c119294913161f",
     "packages": [
         {
             "name": "firebase/php-jwt",
@@ -378,23 +378,26 @@
         },
         {
             "name": "merceslab/google-fixtures",
-            "version": "dev-master",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MercesLyon/GoogleFixtures.git",
-                "reference": "502aec363ff79f8d6d9cdab801b5600357befb9f"
+                "reference": "0518790b4d610467c9e7baab20a24893e958c943"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MercesLyon/GoogleFixtures/zipball/502aec363ff79f8d6d9cdab801b5600357befb9f",
-                "reference": "502aec363ff79f8d6d9cdab801b5600357befb9f",
+                "url": "https://api.github.com/repos/MercesLyon/GoogleFixtures/zipball/0518790b4d610467c9e7baab20a24893e958c943",
+                "reference": "0518790b4d610467c9e7baab20a24893e958c943",
                 "shasum": ""
             },
             "require": {
                 "google/apiclient": "^2.2",
                 "php": "^7.1.3"
             },
-            "type": "symfony-bundle",
+            "require-dev": {
+                "phpunit/phpunit": "^7.4"
+            },
+            "type": "library",
             "autoload": {
                 "psr-4": {
                     "MercesLab\\Component\\GoogleFixtures\\": ""
@@ -402,7 +405,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "proprietary"
+                "MIT"
             ],
             "authors": [
                 {
@@ -411,7 +414,7 @@
                 }
             ],
             "description": "Import data from and export data to google spreadsheets",
-            "time": "2018-10-29T12:28:58+00:00"
+            "time": "2018-10-29T15:43:02+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1021,9 +1024,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "merceslab/google-fixtures": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
