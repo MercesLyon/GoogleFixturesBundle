@@ -4,10 +4,10 @@
            xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
         <service id="MercesLab\Component\GoogleFixtures\ImportClient" public="false">
-            <argument type="service" key="$client" id="merces_lab.google_fixtures.spreadsheet_service"/>
+            <argument type="service" key="$googleServiceSheets" id="merces_lab.google_fixtures.spreadsheet_service"/>
         </service>
         <service id="MercesLab\Component\GoogleFixtures\ExportClient" public="false">
-            <argument type="service" key="$client" id="merces_lab.google_fixtures.spreadsheet_service"/>
+            <argument type="service" key="$googleServiceSheets" id="merces_lab.google_fixtures.spreadsheet_service"/>
         </service>
         <service id="merces_lab.google_fixtures.spreadsheet_client" class="Google_Client" public="false">
             <factory class="MercesLab\Component\GoogleFixtures\ClientFactory" method="createSpreadsheetClient"/>
