@@ -7,7 +7,7 @@ Configuration
 =============
 
     merces_lab_google_fixtures:
-        google_credentials: '{}' # JSON string
+        credentials: '{}' # JSON string
 
 Usage
 =====
@@ -39,7 +39,7 @@ use MercesLab\Component\GoogleFixtures\ImportClient;
 
 class SomeController
 {
-    public function exportAction(ImportClient $exportClient)
+    public function importAction(ImportClient $exportClient)
     {
         $data = $exportClient->importValues(['fileId' => 'myFile', 'range' => '\'Sheet1\'!A2:E9999']);
     }

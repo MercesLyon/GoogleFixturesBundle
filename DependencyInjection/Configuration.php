@@ -21,7 +21,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-            ->scalarNode('google_credentials')->end()
+            ->scalarNode('credentials')->end()
             ->end()
         ;
 
